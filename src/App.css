@@ -16,20 +16,40 @@
   display: block;
   padding-top: 20px;
 }
-ul {
-  padding: 0;
-  margin: 0;
+ol {
+ 
+  padding: 30px;
+  margin:0px;
+}
+li{
+  padding: 0px;
+  margin:0px;
+  color:black;
 }
 .buttons {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
 }
 button {
-  margin: 0.6em auto;
-  font-size: 1.5em;
+  text-align: left;
+  margin: 0.3em auto;
+  font-size: 1.0em;
   display: block;
+  
 }
 .error {
   color: red;
 }
+.normal{
+  background-color:whitesmoke;
+}
+
+.active {
+  background-color: #7FFF00;  
+}
+
+.inactive {
+  background-color:red;
+}
+

@@ -3,9 +3,10 @@ import './App.css'
 import Quiz from './Quiz.js'
 
 class App extends Component {
+  
   render() {
     return (
-      <Quiz /> 
+      <Quiz quiz_position={1} score={0} /> 
     )
   }
 }
