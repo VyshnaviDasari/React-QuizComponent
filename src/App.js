@@ -6,7 +6,7 @@ class App extends Component {
   
   render() {
     return (
-      <Quiz quiz_position={1} score={0} /> 
+      <Quiz quiz_position={1} /> 
     )
   }
 }

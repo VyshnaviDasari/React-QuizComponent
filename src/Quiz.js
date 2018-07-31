@@ -14,32 +14,12 @@ class Quiz extends Component{
     
     render()
     {
-        
-        if(this.props.quiz_position-1===quizData.quiz_questions.length)
-        {
-            this.state.isQuizEnd=1;
-        }
-        else
-        {
-            this.state.isQuizEnd=0;
-        }
-        
-        if(this.state.isQuizEnd)
-            {
-                 return( 
-                    <div>
-                        <QuizEnd />
-                    </div>)
-             }
-             else
-             {
-             return(
+        return(
                 <div>
-                <QuizQuestion quiz_question={quizData.quiz_questions[this.props.quiz_position-1]} quiz_pos={this.props.quiz_position}  />
+                <QuizQuestion quiz_pos={this.props.quiz_position}  />
                 </div>
-                )
-            }
-        }
+             )
+    }
     
 
 }

@@ -17,6 +17,13 @@
       "instruction_text": "How many planets on earth?",
       "answer_options": ["11", "12", "10", "9"],
       "answer": "9"
+    },
+    {
+      "id": 4,
+      "instruction_text": "Which city is caleed garden city ?",
+      "answer_options": ["Vizaq", "Bangalore", "Kolkata", "Delhi"],
+      "answer": "Bangalore"
     }
+
   ]
 }

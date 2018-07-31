@@ -3,6 +3,7 @@ import React ,{Component} from 'react'
 class QuizQuestionButton extends Component{
     constructor(props) {
         super(props);
+        
         this.state = {
             clicked: false,
             status:false,
@@ -12,9 +13,14 @@ class QuizQuestionButton extends Component{
         // This binding is necessary to make `this` work in the callback
         this.handleChoiceClick = this.handleChoiceClick.bind(this);
       }
+
+      componentWillReceiveProps(){
+        this.setState({clicked: false})
+        
+      }
     
-
-
+      
+   
     handleChoiceClick(e)
     {
         
@@ -25,14 +31,14 @@ class QuizQuestionButton extends Component{
           });
         if(e.target.id == this.props.button_text.answer)
         {
-            e.target.className="active";
+          //  e.target.className="active";
            this.state.status=true
            this.state.score++;
           
         }
         else
         {
-            e.target.className="inactive";
+            //e.target.className="inactive";
             this.state.status=false
            
            
